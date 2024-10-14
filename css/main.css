@@ -1,0 +1,308 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+background-color:#34495E;
+width: 100%;
+position: fixed;
+z-index: 999; /* ظاهر nav bar (header)حتى لمة تنزل في الصفحة لتحت يضل ال*/
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 200px;
+}
+.logo{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.8em;
+}
+
+section{
+   padding: 100px 200px; 
+}
+
+.social-icons a{
+   color:#2ECC71; /* حتي تغير لون icons*/
+   font-size: 1.7em;
+   padding-right: 30px;/* حتى يكون في مسافة بينهم*/ 
+}
+.title{
+   display: flex;
+    justify-content: center;
+    color:#1C2833;
+    font-size: 2.2em;
+font-weight: 800;
+margin-bottom: 30px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+ flex-direction: row;/* بجانب بعض حتى تعرض العناصر */   
+flex-wrap: wrap; /* حتى لو تخطى حجم الكروت حجم الصفحة ما تصغر الكروت بل تنزل لتحت*/
+
+}
+
+.card{
+  background-color:#fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1/15%);
+border-radius: 10px;
+padding: 25px;
+margin: 15px;
+transition: 0.7s ease;
+}
+.card :hover{
+    transform: scale(1.1);
+}
+.card .icon {
+    color: #212F3D;
+    font-size: 8em;
+    text-align: center;
+}
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #212F3D;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #2ECC71;
+}
+
+.more-details:hover {
+    color: #28B463;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #2ECC71;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+
+
+  .card{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: rgb(0, 153, 255);
+    font-size: 12px;
+  }
+
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(0, 153, 255);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: rgb(4, 206, 203);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(4, 126, 232),
+                0 0 25px rgb(4, 126, 232),
+                0 0 50px rgb(4, 126, 232),
+                0 0 100px rgb(4, 126, 232);
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
